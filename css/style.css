@@ -26,19 +26,64 @@ img{
     max-width: 100%;
 }
 
-
-.container{
-    margin: 0 auto;
-    padding: 0 1.5rem;
-
+.bg-primary {
+  background: var(--primary-color);
+  color: #333;
 }
-.container-lg{
-    max-width: var(--container-wide);
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
 }
+
+.bg-dark .bg-primary {
+  padding: 0 0.3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid #333;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Container */
+.container {
+  max-width: var(--container-normal);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-lg {
+  max-width: var(--container-wide);
+}
+
+.container-sm {
+  max-width: var(--container-narrow);
+}
+
 
 .bg-dark{
     background: var(--dark-color);
     color: white;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 .header{
     margin: 1.5rem;
@@ -132,6 +177,41 @@ img{
 .team-item img{
     border-radius: 10px;
 }
+
+.contact{
+    padding: 3rem 0 4rem;
+}
+.contact p{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form-group {
+  margin: 2rem 0;
+}
+
+.contact input,
+.contact textarea {
+  border: none;
+  border-bottom: 1px #333 solid;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding-bottom: 1rem;
+}
+
+.contact textarea {
+  height: 200px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: 0;
+}
+
+.contact button {
+  width: 100%;
+}
+
 .footer{
     border-top: 1px solid #aaa;
     margin-top: 2rem;
